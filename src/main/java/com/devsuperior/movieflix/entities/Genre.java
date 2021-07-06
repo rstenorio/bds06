@@ -1,6 +1,7 @@
 package com.devsuperior.movieflix.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -47,9 +48,10 @@ public class Genre implements Serializable {
 		this.name = name;
 	}
 
-//	public List<Movie> getMovies() {
-//		return movies;
-//	}
+	public List<Movie> getMovies() {
+		List<Movie> movies = new ArrayList<>();
+		return movies;
+	}
 
 	@Override
 	public int hashCode() {
@@ -75,9 +77,5 @@ public class Genre implements Serializable {
 			return false;
 		return true;
 	}
-
-	/*
-	 * public Object getMovies() { // TODO Auto-generated method stub return null; }
-	 */
 
 }

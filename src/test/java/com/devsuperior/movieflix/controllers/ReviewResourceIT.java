@@ -106,7 +106,7 @@ public class ReviewResourceIT {
 						.contentType(MediaType.APPLICATION_JSON)
 						.accept(MediaType.APPLICATION_JSON));
 		
-		result.andExpect(status().isCreated());
+		result.andExpect(status().isCreated());s
 		
 		result.andExpect(jsonPath("$.id").isNotEmpty());
 		result.andExpect(jsonPath("$.text").value(reviewText));
